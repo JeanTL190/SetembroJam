@@ -294,6 +294,8 @@ GameObject:
   - component: {fileID: 838041164}
   - component: {fileID: 838041167}
   - component: {fileID: 838041165}
+  - component: {fileID: 838041166}
+  - component: {fileID: 838041171}
   m_Layer: 9
   m_Name: Player
   m_TagString: Untagged
@@ -341,6 +343,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 5
   GroundCheckName: GroundCheck
+--- !u!114 &838041166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838041163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e76a1730227c1524c8eea4fe1df9fef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &838041167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +389,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &838041169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -442,6 +456,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &838041171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838041163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6e99419ce7e2042bc9bc434f19a9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ipt: Vertical
+  acel: 0.5
 --- !u!1 &1657351770
 GameObject:
   m_ObjectHideFlags: 0

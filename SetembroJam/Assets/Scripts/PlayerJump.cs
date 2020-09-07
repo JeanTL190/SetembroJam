@@ -29,4 +29,8 @@ public class PlayerJump : MonoBehaviour
         }
 
     }
+    public float GetJumpForce()
+    {
+        return jumpForce;
+    }
 }

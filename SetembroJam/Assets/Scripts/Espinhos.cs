@@ -5,12 +5,27 @@ using UnityEngine;
 public class Espinhos : MonoBehaviour
 {
     [SerializeField] private LayerMask platformLayerMask;
+    private GameManager gm;
+    private bool destruiu = false;
+    private void Awake()
+    {
+        gm = FindObjectOfType<GameManager>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision != null && (((1 << collision.gameObject.layer) & platformLayerMask) != 0))
         {
             Destroy(collision.gameObject);
+            destruiu = true;
+        }
+    }
+    private void LateUpdate()
+    {
+        if (destruiu)
+        {
+            gm.Spawn();
+            destruiu = false;
         }
     }
 }

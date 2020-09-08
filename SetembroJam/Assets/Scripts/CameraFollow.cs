@@ -7,12 +7,10 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] Vector2 maxXandY;
     [SerializeField] Vector2 minXandY;
     private Transform player;
-    private void Start()
-    {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-    }
+
     private void LateUpdate()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         if (player)
         {
             float x = Mathf.Clamp(player.position.x, minXandY.x, maxXandY.x);

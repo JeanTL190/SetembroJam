@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecff8c352e2d304aae4f1b66751ebc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 5
+  jumpForce: 7
   GroundCheckName: GroundCheck
 --- !u!114 &838041166
 MonoBehaviour:
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929988aee87b5d84b811937983edfef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: 10
+  vel: 5
   ipt: Horizontal
   right: 1
 --- !u!50 &838041168
@@ -481,7 +481,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838041163}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.21, z: 0}
+  m_LocalPosition: {x: 0.13, y: 6.5, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 674538969}
@@ -621,8 +621,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1657351770}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.29, z: 0}
-  m_LocalScale: {x: 200, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -4.145, z: 0}
+  m_LocalScale: {x: 200, y: 9.814216, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2

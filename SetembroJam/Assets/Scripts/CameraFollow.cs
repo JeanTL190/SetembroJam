@@ -13,8 +13,11 @@ public class CameraFollow : MonoBehaviour
     }
     private void LateUpdate()
     {
-        float x = Mathf.Clamp(player.position.x, minXandY.x, maxXandY.x);
-        float y = Mathf.Clamp(player.position.y, minXandY.y, maxXandY.y);
-        this.transform.position = new Vector3(x,y, this.transform.position.z);
+        if (player)
+        {
+            float x = Mathf.Clamp(player.position.x, minXandY.x, maxXandY.x);
+            float y = Mathf.Clamp(player.position.y, minXandY.y, maxXandY.y);
+            this.transform.position = new Vector3(x, y, this.transform.position.z);
+        }
     }
 }

@@ -25,7 +25,7 @@ public class PlayerJump : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
-            rb.velocity += Vector2.up * jumpForce;
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
     }

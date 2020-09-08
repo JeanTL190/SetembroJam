@@ -25,7 +25,7 @@ public class DoubleJump : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !pj.IsGrounded() && canDoubleJump)
         {
-            rb.velocity += Vector2.up * pj.GetJumpForce();
+            rb.AddForce(Vector2.up * pj.GetJumpForce(), ForceMode2D.Impulse);
             canDoubleJump = false;
         }
 

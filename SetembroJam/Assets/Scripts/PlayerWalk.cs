@@ -6,6 +6,7 @@ public class PlayerWalk : MonoBehaviour
 {
     [SerializeField] private float vel = 1f;
     [SerializeField] private string ipt;
+    [SerializeField] private bool right = true;
     private Rigidbody2D rb;
 
     private void Awake()
@@ -19,14 +20,20 @@ public class PlayerWalk : MonoBehaviour
         {
             transform.rotation = new Quaternion(0, 0, 0, 0);
             rb.velocity = new Vector2(vel, rb.velocity.y);
+            right = true;
         }
         else if (aux < 0)
         {
             transform.rotation = new Quaternion(0, 180, 0, 0);
             rb.velocity = new Vector2(-vel, rb.velocity.y);
+            right = false;
         }
         else
             rb.velocity = new Vector2(0, rb.velocity.y);
 
+    }
+    public bool GetRight()
+    {
+        return right;
     }
 }

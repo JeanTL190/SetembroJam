@@ -8,7 +8,10 @@ public class CheckPoint : MonoBehaviour
 
     public void SpawnPlayer()
     {
-        player.transform.position = this.transform.position;
-        Instantiate(player);
+        if (player != null)
+        {
+            player.transform.position = this.transform.position;
+            Instantiate(player);
+        }
     }
 }

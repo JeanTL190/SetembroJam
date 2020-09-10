@@ -1245,6 +1245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061398002}
   - component: {fileID: 2061398003}
+  - component: {fileID: 2061398004}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -1324,6 +1325,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2061398004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061398001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb5ac80f05b3724eaae8f8757309aa0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 2061398003}
 --- !u!1001 &3055451649687580530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1383,9 +1397,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3055451650525303102, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055451650525303102, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055451650525303102, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055451650525303102, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: m_SpriteTilingProperty.border.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055451650525303102, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055451650525303102, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.37
+      objectReference: {fileID: 0}
     - target: {fileID: 3546846586569062753, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
       propertyPath: maxHealth
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 3546846586569062753, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}
+      propertyPath: hb
+      value: 
+      objectReference: {fileID: 2061398004}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 973f3e0b899d33b428e5eec391223c41, type: 3}

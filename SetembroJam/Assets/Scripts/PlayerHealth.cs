@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 3;
+    [SerializeField] private HealthBar hb;
     private int healthAtual;
     private void Awake()
     {
         healthAtual = maxHealth;
+        hb.SetMaxHealth(maxHealth);
     }
     public void SetMaxHealth(int valor)
     {
@@ -20,6 +22,6 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(healthAtual);
+        hb.SetHealth(healthAtual);
     }
 }

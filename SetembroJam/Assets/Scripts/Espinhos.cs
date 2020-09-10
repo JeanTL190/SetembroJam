@@ -24,8 +24,8 @@ public class Espinhos : MonoBehaviour
     {
         if (destruiu)
         {
-            gm.Spawn();
             destruiu = false;
+            gm.Spawn();
         }
     }
 }

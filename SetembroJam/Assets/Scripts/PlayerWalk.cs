@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class PlayerWalk : MonoBehaviour
 {
-    [SerializeField] private float vel = 1f;
+    [SerializeField] private float velMax = 1f;
     [SerializeField] private string ipt;
     [SerializeField] private bool right = true;
     private Rigidbody2D rb;
+    private float vel;
+    private Animator anim;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        vel = velMax;
     }
     private void FixedUpdate()
     {
@@ -30,10 +33,18 @@ public class PlayerWalk : MonoBehaviour
         }
         else
             rb.velocity = new Vector2(0, rb.velocity.y);
-
     }
     public bool GetRight()
     {
         return right;
     }
+    public void ResetVel()
+    {
+        vel = velMax;
+    }
+    public void ZeroVel()
+    {
+        vel = 0;
+    }
+
 }

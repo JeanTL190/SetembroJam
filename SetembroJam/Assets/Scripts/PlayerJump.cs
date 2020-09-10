@@ -7,6 +7,7 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float jumpForce = 1f;
     [SerializeField] private string GroundCheckName;
     private Rigidbody2D rb;
+    private Animator anim;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

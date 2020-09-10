@@ -6,6 +6,7 @@ public class FastDown : MonoBehaviour
 {
     private Rigidbody2D rb;
     private PlayerJump pj;
+    private Animator anim;
     [SerializeField] private string ipt;
     [SerializeField] private float acel = 1f;
     private void Awake()

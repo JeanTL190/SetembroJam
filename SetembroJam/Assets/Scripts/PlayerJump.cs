@@ -34,4 +34,8 @@ public class PlayerJump : MonoBehaviour
     {
         return jumpForce;
     }
+    public void SetJumpForce(float j)
+    {
+        jumpForce = j;
+    }
 }

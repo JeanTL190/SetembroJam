@@ -46,5 +46,9 @@ public class PlayerWalk : MonoBehaviour
     {
         vel = 0;
     }
+    public void SetVelMax(float v)
+    {
+        velMax = v;
+    }
 
 }

@@ -38,6 +38,9 @@ public class DoubleJump : MonoBehaviour
                 canDoubleJump = false;
             }
         }
-
+    }
+    public void SetJumpExtra(int j)
+    {
+        jumpExtra = j;
     }
 }

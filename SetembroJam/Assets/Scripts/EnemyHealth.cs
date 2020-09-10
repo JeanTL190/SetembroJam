@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private HealthBar hb;
     [SerializeField] private bool canTakeDamage = false;
     private int healthAtual;
+    private Animator anim;
 
     private void Awake()
     {

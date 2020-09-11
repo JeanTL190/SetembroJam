@@ -10,15 +10,13 @@ public class PlayerHealth : MonoBehaviour
     private int healthAtual;
     private Rigidbody2D rb;
     private Animator anim;
+    private GameManager gm;
     private void Awake()
     {
         healthAtual = maxHealth;
         hb.SetMaxHealth(maxHealth);
         rb = GetComponent<Rigidbody2D>();
-    }
-    public void SetMaxHealth(int valor)
-    {
-        maxHealth = valor;
+        gm = FindObjectOfType<GameManager>();
     }
     public void TakeDamage(int damage)
     {
@@ -28,5 +26,6 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
         hb.SetHealth(healthAtual);
+        maxHealth = gm.GetEnergiaVital();
     }
 }

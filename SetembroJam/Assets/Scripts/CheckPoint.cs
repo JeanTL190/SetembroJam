@@ -5,6 +5,11 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     [SerializeField] GameObject player;
+    private CheckPointHealth cph;
+    private void Awake()
+    {
+        cph = GetComponent<CheckPointHealth>();
+    }
 
     public void SpawnPlayer()
     {
@@ -12,6 +17,14 @@ public class CheckPoint : MonoBehaviour
         {
             player.transform.position = this.transform.position;
             Instantiate(player);
+        }
+    }
+
+    public void ResetCheckPoint()
+    {
+        if(cph.GetVida()<=0)
+        {
+            cph.ResetVida();
         }
     }
 }

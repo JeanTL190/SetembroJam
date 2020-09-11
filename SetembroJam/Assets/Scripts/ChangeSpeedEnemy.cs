@@ -8,10 +8,15 @@ public class ChangeSpeedEnemy : MonoBehaviour
     [SerializeField] private float fastSpeed = 2f;
     [SerializeField] private LayerMask platformLayerMask;
     [SerializeField] private float acel = 0.5f;
+    [SerializeField] private float damageTime = 0.5f;
+
     private EnemyMoviment em;
     private float speedAtual;
     private bool inRange = false;
+    private float damageTimer = 0f;
     private bool atacando = false;
+    private bool tookdamage = false;
+
     private void Awake()
     {
         speedAtual = normalSpeed;
@@ -40,30 +45,53 @@ public class ChangeSpeedEnemy : MonoBehaviour
     {
         return inRange;
     }
+    public void TookDamage()
+    {
+        tookdamage = true;
+    }
     private void FixedUpdate()
     {
-        if (!inRange)
+        if (!tookdamage)
         {
-            if(speedAtual > normalSpeed)
+            if (!inRange)
             {
-                speedAtual = Mathf.Clamp(speedAtual - acel, normalSpeed, fastSpeed);
+                if (speedAtual > normalSpeed)
+                {
+                    speedAtual = Mathf.Clamp(speedAtual - acel, normalSpeed, fastSpeed);
+                }
+                else if (speedAtual < normalSpeed)
+                {
+                    speedAtual = Mathf.Clamp(speedAtual + acel, 0, normalSpeed);
+                }
             }
-            else if (speedAtual<normalSpeed)
+            else
             {
-                speedAtual = Mathf.Clamp(speedAtual + acel, 0, normalSpeed);
+                if (!atacando)
+                {
+                    speedAtual = Mathf.Clamp(speedAtual + acel, 0, fastSpeed);
+                }
+                else
+                {
+                    speedAtual = 0;
+                }
             }
         }
         else
         {
-            if (!atacando)
-            {
-                speedAtual = Mathf.Clamp(speedAtual + acel, 0, fastSpeed);
-            }
-            else
-            {
-                speedAtual = 0;
-            }
+            speedAtual = 0;
         }
         em.ChangeVel(speedAtual);
+    }
+    private void Update()
+    {
+        if (tookdamage)
+        {
+            damageTimer += Time.deltaTime;
+            if (damageTimer >= damageTime)
+            {
+                tookdamage = false;
+                damageTimer = 0;
+            }
+        }
     }
 }

@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   checkPoints:
   - {fileID: 396142144}
+  energiaVital: 3
 --- !u!4 &106041766
 Transform:
   m_ObjectHideFlags: 0
@@ -293,7 +294,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   acel: 0.5
-  damageTime: 0.5
+  damageTime: 2
 --- !u!61 &294312920
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -761,6 +762,7 @@ MonoBehaviour:
   maxHealth: 3
   hb: {fileID: 1247703301}
   canTakeDamage: 1
+  recuoForce: 500
 --- !u!1 &843983127
 GameObject:
   m_ObjectHideFlags: 0

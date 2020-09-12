@@ -16,7 +16,6 @@ public class Espinhos : MonoBehaviour
     {
         if(collision != null && (((1 << collision.gameObject.layer) & platformLayerMask) != 0))
         {
-            Destroy(collision.gameObject);
             destruiu = true;
         }
     }

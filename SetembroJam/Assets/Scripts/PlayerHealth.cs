@@ -22,6 +22,14 @@ public class PlayerHealth : MonoBehaviour
     {
         rb.AddForce(-transform.right * recuo);
         healthAtual -= damage;
+        if(healthAtual <= 0)
+        {
+            gm.Spawn();
+        }
+    }
+    public void ResetVida()
+    {
+        healthAtual = maxHealth;
     }
     private void Update()
     {

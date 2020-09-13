@@ -5,29 +5,25 @@ using UnityEngine;
 public class SpawnStum : MonoBehaviour
 {
     [SerializeField] private Transform spawn;
-    [SerializeField] private float timeToStum = 2f;
     [SerializeField] private GameObject go;
     private bool ipt;
-    IEnumerator Stum()
-    {
-        while (true)
-        {
-            if (ipt)
-            {
-                go.transform.position = spawn.position;
-                Instantiate(go);
-                yield return new WaitForSeconds(timeToStum);
-            }
-            else
-                yield return new WaitForEndOfFrame();
-        }
-    }
+    private Animator anim;
     private void Awake()
     {
-        StartCoroutine("Stum");
+        anim = GetComponent<Animator>();
     }
+    public void Stum()
+    {
+        go.transform.position = spawn.transform.position;
+        Instantiate(go);
+    }
+ 
     private void Update()
     {
         ipt = Input.GetButtonDown("Stum");
+        if (ipt)
+        {
+            anim.SetTrigger("Energy");
+        }
     }
 }

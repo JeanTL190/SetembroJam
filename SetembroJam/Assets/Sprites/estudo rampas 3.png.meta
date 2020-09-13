@@ -1,43 +1,82 @@
 fileFormatVersion: 2
-guid: 6c346a7c6862c524399acd88f5cc6977
+guid: d4622e01416074943b25eaff9e8f9b75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3872525162498820766
-    second: rampas 2_0
+      213: 2545185547103372904
+    second: estudo rampas 3_0
   - first:
-      213: 4243335677581421283
-    second: rampas 2_1
+      213: -6867930791772770875
+    second: estudo rampas 3_1
   - first:
-      213: -675887559842379532
-    second: rampas 2_2
+      213: -3985870091547555734
+    second: estudo rampas 3_2
   - first:
-      213: -1174001167745620597
-    second: rampas 2_3
+      213: -49597437531597467
+    second: estudo rampas 3_3
   - first:
-      213: 2098963463363901273
-    second: rampas 2_4
+      213: -2215539270586716309
+    second: estudo rampas 3_4
   - first:
-      213: 2795499652993421271
-    second: rampas 2_5
+      213: -285191595671342519
+    second: estudo rampas 3_5
   - first:
-      213: -843300655370646420
-    second: rampas 2_6
+      213: 7414351502305694954
+    second: estudo rampas 3_6
   - first:
-      213: 5898788156796100360
-    second: rampas 2_7
+      213: -2494224841251754382
+    second: estudo rampas 3_7
   - first:
-      213: 3434945786535091220
-    second: rampas 2_8
+      213: -2290876660636713983
+    second: estudo rampas 3_8
   - first:
-      213: 1046940581527195833
-    second: rampas 2_9
+      213: -6604228011085308675
+    second: estudo rampas 3_0
   - first:
-      213: 5672143639513114974
-    second: rampas 2_10
+      213: -5642986695734534172
+    second: estudo rampas 3_1
   - first:
-      213: 1789527992196391320
-    second: rampas 2_11
+      213: -5090095488293899249
+    second: estudo rampas 3_2
+  - first:
+      213: 5410720441530329845
+    second: estudo rampas 3_3
+  - first:
+      213: -7798074316882842409
+    second: estudo rampas 3_4
+  - first:
+      213: -2531408056478964716
+    second: estudo rampas 3_5
+  - first:
+      213: 2805822234045687348
+    second: estudo rampas 3_6
+  - first:
+      213: -9107871203452932603
+    second: estudo rampas 3_7
+  - first:
+      213: -3177866903734482349
+    second: estudo rampas 3_8
+  - first:
+      213: 8706588512256212812
+    second: estudo rampas 3_9
+  - first:
+      213: 8385424865265366594
+    second: estudo rampas 3_10
+  - first:
+      213: -2867241424499182754
+    second: estudo rampas 3_11
+  - first:
+      213: 853162787084392084
+    second: estudo rampas 3_12
+  - first:
+      213: -639106310119059136
+    second: estudo rampas 3_13
+  - first:
+      213: 635027306943234938
+    second: estudo rampas 3_14
+  - first:
+      213: 1114209692165875132
+    second: estudo rampas 3_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -137,13 +176,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: rampas 2_0
+      name: estudo rampas 3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,83 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9a01862e19fdb530800000000000000
-      internalID: 3872525162498820766
+      spriteID: dfc53975d911954a0800000000000000
+      internalID: -6604228011085308675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rampas 2_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ea6bfc015b53ea30800000000000000
-      internalID: 4243335677581421283
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rampas 2_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4f84d7768d3ce96f0800000000000000
-      internalID: -675887559842379532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rampas 2_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b85e0a6782c15bfe0800000000000000
-      internalID: -1174001167745620597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rampas 2_4
+      name: estudo rampas 3_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 16
-        width: 16
-        height: 16
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,20 +211,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 957345e2624012d10800000000000000
-      internalID: 2098963463363901273
+      spriteID: 4efdc708f7510b1b0800000000000000
+      internalID: -5642986695734534172
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rampas 2_5
+      name: estudo rampas 3_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,20 +232,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7df866a8f1c9bc620800000000000000
-      internalID: 2795499652993421271
+      spriteID: f047c633f195c59b0800000000000000
+      internalID: -5090095488293899249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rampas 2_6
+      name: estudo rampas 3_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa2c58039db61b40800000000000000
+      internalID: 5410720441530329845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: estudo rampas 3_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dce91a89bca7c390800000000000000
+      internalID: -7798074316882842409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: estudo rampas 3_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 414620cd8c1aedcd0800000000000000
+      internalID: -2531408056478964716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: estudo rampas 3_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,83 +316,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6c47cd958efb44f0800000000000000
-      internalID: -843300655370646420
+      spriteID: 436af2bb47840f620800000000000000
+      internalID: 2805822234045687348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rampas 2_7
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80fdc135394bcd150800000000000000
-      internalID: 5898788156796100360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rampas 2_8
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 41c16256ef06baf20800000000000000
-      internalID: 3434945786535091220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rampas 2_9
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b09ed679ea778e00800000000000000
-      internalID: 1046940581527195833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: rampas 2_10
+      name: estudo rampas 3_7
       rect:
         serializedVersion: 2
         x: 64
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -361,20 +337,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e59ab2c769087be40800000000000000
-      internalID: 5672143639513114974
+      spriteID: 50ead2265675a9180800000000000000
+      internalID: -9107871203452932603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: rampas 2_11
+      name: estudo rampas 3_8
       rect:
         serializedVersion: 2
-        x: 80
+        x: 128
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,8 +358,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891eb724a3ea5d810800000000000000
-      internalID: 1789527992196391320
+      spriteID: 35a8f6b53e2f5e3d0800000000000000
+      internalID: -3177866903734482349
       vertices: []
       indices: 
       edges: []

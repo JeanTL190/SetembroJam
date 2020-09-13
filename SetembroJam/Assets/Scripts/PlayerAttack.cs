@@ -5,16 +5,22 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private LayerMask platformLayerMask;
+    private Animator anim;
     private GameManager gm;
     private int damage;
 
     private void Awake()
     {
         gm = FindObjectOfType<GameManager>();
+        anim = GetComponentInParent<Animator>();
     }
     private void Update()
     {
         damage = gm.GetEnergiaVital();
+        if (Input.GetButtonDown("Attack"))
+        {
+            anim.SetTrigger("Attack");
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

@@ -13,13 +13,18 @@ public class FastDown : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         pj = GetComponent<PlayerJump>();
+        anim = GetComponent<Animator>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         float aux = Input.GetAxis(ipt);
         if(aux<0 && !pj.IsGrounded())
         {
             rb.velocity -= Vector2.up*acel;
+        }
+        if(Input.GetButtonDown(ipt) && aux < 0)
+        {
+            anim.SetTrigger("DownFast");
         }
     }
 }

@@ -7,7 +7,6 @@ public class SpawnStum : MonoBehaviour
     [SerializeField] private Transform spawn;
     [SerializeField] private float timeToStum = 2f;
     [SerializeField] private GameObject go;
-    private bool canShoot = true;
     private bool ipt;
     IEnumerator Stum()
     {
@@ -18,7 +17,6 @@ public class SpawnStum : MonoBehaviour
                 go.transform.position = spawn.position;
                 Instantiate(go);
                 yield return new WaitForSeconds(timeToStum);
-                canShoot = true;
             }
             else
                 yield return new WaitForEndOfFrame();

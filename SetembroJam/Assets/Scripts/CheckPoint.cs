@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    private PlayerHealth ph;
     private CheckPointHealth cph;
     private void Awake()
     {
         cph = GetComponent<CheckPointHealth>();
+        ph = FindObjectOfType<PlayerHealth>();
     }
 
     public void SpawnPlayer()
     {
-        if (player != null)
-        {
-            player.transform.position = this.transform.position;
-            Instantiate(player);
-        }
+        ph.ResetVida();
+        ph.transform.position = this.transform.position;
     }
 
     public void ResetCheckPoint()

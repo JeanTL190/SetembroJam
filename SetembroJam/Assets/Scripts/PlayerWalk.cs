@@ -13,8 +13,13 @@ public class PlayerWalk : MonoBehaviour
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         vel = velMax;
+    }
+    private void Update()
+    {
+        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
     }
     private void FixedUpdate()
     {

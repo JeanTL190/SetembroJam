@@ -11,7 +11,10 @@ public class StumMoviment : MonoBehaviour
     [SerializeField] private float speedStum = 1f;
     [SerializeField] private float speedReflect = 2f;
     [SerializeField] private float maxDist = 3f;
+    [SerializeField] private int dano = 1;
     [SerializeField] private LayerMask platformLayerMask;
+    [SerializeField] private LayerMask enemy1;
+    [SerializeField] private float force = 500f;
     private void Awake()
     {
         pw = FindObjectOfType<PlayerWalk>();
@@ -50,12 +53,19 @@ public class StumMoviment : MonoBehaviour
             {
                 rb.velocity = -rb.velocity.normalized*speedReflect;
                 transform.rotation = new Quaternion(0, 180, 0, 0);
+                collision.GetComponent<Rigidbody2D>().AddForce(Vector2.right*force);
             }
             else
             {
                 rb.velocity = -rb.velocity*speedReflect;
                 transform.rotation = new Quaternion(0, 0, 0, 0);
+                collision.GetComponent<Rigidbody2D>().AddForce(-Vector2.right * force);
             }
+        }
+        if (collision != null && (((1 << collision.gameObject.layer) & enemy1) != 0))
+        {
+            collision.GetComponent<EnemyHealth>().TakeDamage(dano);
+            Destroy(this.gameObject);
         }
     }
 

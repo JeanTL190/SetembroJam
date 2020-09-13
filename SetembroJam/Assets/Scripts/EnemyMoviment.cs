@@ -8,15 +8,18 @@ public class EnemyMoviment : MonoBehaviour
     [SerializeField] Transform posiEsquerda;
     private Rigidbody2D rb;
     private Transform tToGo;
+    private Animator anim;
     private float velAtual;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         tToGo = posiDireita;
     }
 
     private void Update()
     {
+        anim.SetFloat("speed", Mathf.Abs(rb.velocity.x));
         if (tToGo == posiDireita)
         {
             if (transform.position.x > tToGo.position.x)

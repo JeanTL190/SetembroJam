@@ -14,6 +14,7 @@ public class Enemy1Ataque : MonoBehaviour
     private void Awake()
     {
         cse = GetComponentInChildren<ChangeSpeedEnemy>();
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -26,6 +27,7 @@ public class Enemy1Ataque : MonoBehaviour
                 cse.SetAtaque(true);
                 if(Time.time > nextAttack)
                 {
+                    anim.SetTrigger("attack");
                     nextAttack = Time.time + intervaloEntreAttacks;
                 }
             }

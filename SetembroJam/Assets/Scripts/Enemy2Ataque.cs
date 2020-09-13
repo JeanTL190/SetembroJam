@@ -7,8 +7,11 @@ public class Enemy2Ataque : MonoBehaviour
     private EnemyMoviment em;
     [SerializeField] private LayerMask playerLayerMask;
     [SerializeField] float velMax = 2f;
+    [SerializeField] private float distMin = 1.5f;
     private bool inRange = false;
     private bool stunado = false;
+    private Transform target;
+    private Animator anim;
 
     private void Awake()
     {
@@ -44,6 +47,10 @@ public class Enemy2Ataque : MonoBehaviour
         else
         {
             em.ChangeVel(velMax);
+        }
+        if (Mathf.Abs(target.position.x - transform.position.x) < distMin && inRange && !stunado)
+        {
+
         }
     }
 }
